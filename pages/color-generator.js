@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.scss'
 import { FaHome, FaRandom } from "react-icons/fa";
 import { MdOutlineInvertColors } from "react-icons/md";
 
-export default function colorGenerator() {
+export default function ColorGenerator() {
   if (typeof window !== "undefined") {
     const color = document.querySelector("#color");
     const body = document.querySelector("#body");

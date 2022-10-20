@@ -6,7 +6,7 @@ import { FaHome, FaRandom } from "react-icons/fa";
 import { IoColorPaletteSharp } from "react-icons/io5";
 
 
-export default function gradientGenerator() {
+export default function GradientGenerator() {
   if (typeof window !== "undefined") {
     const color1 = document.querySelector("#color1");
     const color2 = document.querySelector("#color2");
