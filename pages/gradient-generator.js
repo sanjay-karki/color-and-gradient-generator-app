@@ -24,10 +24,10 @@ export default function GradientGenerator() {
     document.getElementById("gradientIs").innerHTML = body.style.background+";";
   }
 
-  const forInputs = (InputId, DefaultValue)=>{
+  const forInputs = (Text, InputId, DefaultValue)=>{
     return (
       <div className={styles.card}>
-        <h2>Color 1 &rarr;</h2>
+        <h2>{Text} &rarr;</h2>
         <input
           className={styles.color}
           id={InputId}
@@ -53,8 +53,8 @@ export default function GradientGenerator() {
           GRADIENT GENERATOR
         </h1>
         <div className={styles.grid}>
-          {forInputs("color1", "#ffffff")}
-          {forInputs("color2", "#FFDA22")}
+          {forInputs("Color 1", "color1", "#ffffff")}
+          {forInputs("Color 2", "color2", "#FFDA22")}
         </div>
         <button className={styles.randomButton} onClick={handleRandom}>
           <div><h2>Randomize </h2><FaRandom className={styles.randomButtonReactIcon} /></div>
