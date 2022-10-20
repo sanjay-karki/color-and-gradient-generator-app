@@ -16,9 +16,9 @@
     font-size: calc(4rem * var(--text-multiplier1));
     margin-bottom: calc(2rem * var(--text-multiplier1));
     line-height: 1.15;
-    text-shadow: 0.1rem 0.1rem hsla(0, 0%, 100%, 0.351);
     text-align: center;
     color: hsl(0, 0%, 100%);
+    letter-spacing: 0.1rem;
     -webkit-text-stroke: 0.13rem hsla(0, 0%, 0%, 0.4);
     text-shadow: 0.15rem 0.15rem hsl(17, 100%, 65%), 0.3rem 0.3rem hsl(173, 100%, 39%);
   }
