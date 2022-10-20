@@ -1,6 +1,6 @@
 # :art: Color & Gradient Generator
 **Live Demo:**
-https://sanjay-karki.github.io/color-and-gradient-generator-app/
+https://sanjaykarki-color-and-gradient-generator.vercel.app/
 <p align="center" width="100%">
 <img src="https://user-images.githubusercontent.com/106867464/196995258-712d9958-c70f-4398-8d7b-110ebc1d90cd.png" width="96%">
 </p>
