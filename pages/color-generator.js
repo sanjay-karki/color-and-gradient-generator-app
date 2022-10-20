@@ -54,8 +54,8 @@ export default function ColorGenerator() {
         </button>
         <p className={styles.colorIs}>Current Color: <span id="colorIs"></span></p>
         <div className={styles.grid}>
-          <Link href="/"><button className={styles.goBackButton}><FaHome className={styles.reactIcon} /><br/>GO BACK TO HOMEPAGE</button></Link>
           <Link href="/gradient-generator"><button className={styles.gradientButton}><MdOutlineInvertColors className={styles.reactIcon} /><br/>GRADIENT GENERATOR<br/></button></Link>
+          <Link href="/"><button className={styles.goBackButton}><FaHome className={styles.reactIcon} /><br/>GO BACK TO HOMEPAGE</button></Link>
         </div>
         <p className={styles.footer}>By <a href="https://www.linkedin.com/in/sanjay-karki9/" target="_blank" rel='noreferrer'>Sanjay Karki</a></p>
       </main>

@@ -61,8 +61,8 @@ export default function GradientGenerator() {
         </button>
         <p className={styles.gradientIs}>Current Gradient: <span id="gradientIs"></span></p>
         <div className={styles.grid}>
-          <Link href="/"><button className={styles.goBackButton}><FaHome className={styles.reactIcon} /><br/>GO BACK TO HOMEPAGE</button></Link>
           <Link href="/color-generator"><button className={styles.colorButton}><IoColorPaletteSharp className={styles.reactIcon} /><br/>COLOR GENERATOR</button></Link>
+          <Link href="/"><button className={styles.goBackButton}><FaHome className={styles.reactIcon} /><br/>GO BACK TO HOMEPAGE</button></Link>
         </div>
         <p className={styles.footer}>By <a href="https://www.linkedin.com/in/sanjay-karki9/" target="_blank" rel='noreferrer'>Sanjay Karki</a></p>
       </main>
