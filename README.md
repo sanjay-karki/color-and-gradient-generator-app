@@ -15,3 +15,4 @@ https://sanjay-karki.github.io/color-and-gradient-generator-app/
 - Sass
 - JavaScript
 - [Next](https://nextjs.org/) - React Framework
+- [React](https://reactjs.org/) - JS Library
