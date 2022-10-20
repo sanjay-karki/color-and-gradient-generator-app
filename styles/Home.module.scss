@@ -1,0 +1,174 @@
+@use "./Abstracts/mixins" as m;
+
+.container {
+  padding: 0 2rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.main {
+  @include m.simpleFlexy();
+  min-height: 100vh;
+  padding: calc(2.5rem * var(--text-multiplier1)) 0 0;
+  flex: 1;
+  flex-direction: column;
+
+  .title {
+    font-size: calc(4rem * var(--text-multiplier1));
+    margin-bottom: calc(2rem * var(--text-multiplier1));
+    line-height: 1.15;
+    text-shadow: 0.1rem 0.1rem hsla(0, 0%, 100%, 0.351);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    -webkit-text-stroke: 0.13rem hsla(0, 0%, 0%, 0.4);
+    text-shadow: 0.15rem 0.15rem hsl(17, 100%, 65%), 0.3rem 0.3rem hsl(173, 100%, 39%);
+  }
+  
+  .grid {
+    @include m.simpleFlexy();
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: calc(2.5rem * var(--text-multiplier1)) 0;
+    gap: calc(3rem * var(--text-multiplier1));
+    @media (max-width: 600px) {
+      width: 85vw;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .card {
+      @include m.simpleFlexy();
+      justify-content: space-between;
+      margin: 1rem;
+      padding: 1.5rem;
+      color: inherit;
+      text-shadow: 0.03rem 0.03rem hsla(0, 0%, 100%, 0.351);
+      border: 0.15rem solid hsl(0, 0%, 0%);
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 0.6rem;
+      transition: all 0.15s ease;
+      width: 14rem;
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: hsl(212, 100%, 48%);
+      }
+      .color {
+        width: 3rem;
+        height: 3rem;
+      }
+      @media (max-width: 280px) {
+        width: 13rem;
+      }
+    }
+  
+    .gradientButton {
+      @include m.colorAndGradientButton();
+      background: linear-gradient(
+        109.6deg,
+        hsl(337, 98%, 32%) 11.2%,
+        hsl(358, 78%, 57%) 53.6%,
+        hsl(17, 100%, 65%) 91.1%
+      );
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      &:hover {
+        background-position: 0% 0%;
+      }
+    }
+    
+    .colorButton {
+      @include m.colorAndGradientButton();
+      background-color: hsl(173, 100%, 39%);
+      &:hover {
+        background-color: hsl(167, 93%, 23%);
+      }
+    }
+    
+    .goBackButton {
+      @include m.colorAndGradientButton();
+      background-color: hsl(339, 64%, 47%);
+      &:hover {
+        background-color: hsl(317, 100%, 29%);
+      }
+    }
+    
+    .reactIcon {
+      font-size: 5rem;
+      filter: drop-shadow(0.2rem 0.2rem hsla(0, 0%, 0%, 0.4));
+    }
+
+    span {
+      .reactIcon {
+        font-size: 10rem;
+        opacity: 0.6;
+      }
+    }
+
+    h2 {
+      text-decoration: underline;
+      opacity: 0.75;
+      font-size: calc(1.5rem * var(--text-multiplier1));
+      &:hover {
+        color: hsl(358, 78%, 57%);
+      }
+    }
+  }
+  
+  .colorIs, .gradientIs {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: white;
+    padding: 0.5rem 0.85rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 0.125rem solid hsl(0, 0%, 0%);
+    word-wrap: break-word;
+    span {
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  }
+  .randomButton {
+    width: 15rem;
+    border: 0.15rem solid hsl(0, 0%, 0%);
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0.3rem 0 0 hsl(0, 0%, 0%);
+    transition: all 0.3s ease;
+    margin: 1rem 0 1.5rem;
+    & > div {
+      @include m.simpleFlexy();
+      justify-content: space-evenly;
+      h2 {
+        font-size: 1.6rem;
+      }
+      .randomButtonReactIcon {
+        font-size: 1.5rem;
+      }
+    }
+    &:hover {
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(0, 0%, 0%);
+      border: 0.15rem solid hsl(0, 0%, 100%);
+      box-shadow: none;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  .footer {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    margin-top: 2.2rem;
+    color: hsl(0, 0%, 0%);
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

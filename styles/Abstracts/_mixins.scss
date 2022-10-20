@@ -1,0 +1,28 @@
+@mixin simpleFlexy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin colorAndGradientButton {
+    height: calc(20rem * var(--text-multiplier1));
+    width: calc(24rem * var(--text-multiplier1));
+    font-size: calc(2.2rem * var(--text-multiplier1));
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 0.15rem 0.15rem hsla(0, 0%, 0%, 0.5);
+    border: 1rem solid inset hsl(0, 0%, 0%);
+    cursor: pointer;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 0rem 0 hsl(0, 0%, 0%);
+    transition: all .3s ease;
+    &:hover {
+        box-shadow: 1rem 1rem 0rem 0 hsl(0, 0%, 0%);
+        transform: scale(1.03);
+    }
+    &:active, &:focus  {
+        box-shadow: none;
+        transform: scale(0.95);
+    }
+}
