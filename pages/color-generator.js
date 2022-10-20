@@ -52,7 +52,7 @@ export default function ColorGenerator() {
         <button className={styles.randomButton} onClick={handleRandom}>
           <div><h2>Randomize </h2><FaRandom className={styles.randomButtonReactIcon} /></div>
         </button>
-        <p className={styles.colorIs}>Color: <span id="colorIs"></span></p>
+        <p className={styles.colorIs}>Current Color: <span id="colorIs"></span></p>
         <div className={styles.grid}>
           <Link href="/"><button className={styles.goBackButton}><FaHome className={styles.reactIcon} /><br/>GO BACK TO HOMEPAGE</button></Link>
           <Link href="/gradient-generator"><button className={styles.gradientButton}><MdOutlineInvertColors className={styles.reactIcon} /><br/>GRADIENT GENERATOR<br/></button></Link>

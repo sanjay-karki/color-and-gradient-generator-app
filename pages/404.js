@@ -18,7 +18,7 @@ export default function Home() {
             <span><TbFaceIdError className={styles.reactIcon} /></span>
         </div>
         <div className={styles.grid}>
-            <h2><Link href="/">GO BACK TO HOMEPAGE</Link></h2>
+            <h3><Link href="/">GO BACK TO HOMEPAGE</Link></h3>
         </div>
       </main>
     </div>
